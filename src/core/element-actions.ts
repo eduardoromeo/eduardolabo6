@@ -18,7 +18,7 @@ export class ElementActions {
             timeout: 10000
         });
     }
-    static async selectColorOption(locator: string): Promise<void> {
+    static async selectColor(locator: string): Promise<void> {
         await driverInstance.Page.click('//button[@aria-labelledby="edit_project_modal_field_color_label"]');
         await driverInstance.Page.click(locator)
         }

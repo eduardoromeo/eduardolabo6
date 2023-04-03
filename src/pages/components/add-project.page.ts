@@ -20,6 +20,24 @@ class AddProject extends BasePage {
         await ElementActions.setText(this.nameTextField, projectName);
     }
 
+    async setProjectColor() {
+        
+        await ElementActions.selectColor(this.colorDropdown);
+        
+    }
+
+    async setProjectfavoritestoggle() {
+        await ElementActions.click(this.favoritesToggle);
+    }
+
+    async setProjectOptionListView() {
+        await ElementActions.click(this.optionListView);
+    }
+
+    async setProjectOptionBoardView() {
+        await ElementActions.click(this.optionBoardView);
+    }
+
     async clickAdd() {
         await ElementActions.click(this.addButton);
     }
@@ -29,7 +47,11 @@ class AddProject extends BasePage {
     }
 
     async createNewProject(projectName: string, color: string, isFavorite: boolean, view: string) {
-        // Add Code
+        await ElementActions.setText(this.nameTextField, projectName);
+        await ElementActions.selectColor(this.colorDropdown);
+        await ElementActions.click(this.favoritesToggle);
+        await ElementActions.click(this.optionListView);
+        await ElementActions.click(this.addButton);
     }
 }
 
