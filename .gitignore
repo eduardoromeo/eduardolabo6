@@ -239,3 +239,6 @@ $RECYCLE.BIN/
 .vscode
 cucumber-report.html
 allure-results
+/test-results/
+/playwright-report/
+/playwright/.cache/
