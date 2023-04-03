@@ -34,10 +34,6 @@ export class Driver {
         return this.driver;
     }
 
-    // async getPageTitle() {
-    //     return await this.page.title;
-    // }
-
     async isElementDisplayed(locator: string) {
         //await this.page.waitForTimeout(5000);
         return await this.page.isVisible(locator, {

@@ -7,10 +7,10 @@ class AddProject extends BasePage {
     private cancelButton: string = '//span[text()="Cancel"]//parent::button';    
 
     // Extra Points add select the following behavior
-    private colorDropdown: string = '';
-    private favoritesToggle: string = '';
-    private optionListView: string = '';
-    private optionBoardView: string = '';
+    private colorDropdown: string = '//*[@id="dropdown-select-0-option-yellow"]/span[2][text()="Amarelo"]';
+    private favoritesToggle: string = '//span[@class="reactist_switch--handle"]';
+    private optionListView: string = '//div[text()="Lista"]';
+    private optionBoardView: string = '//div[@class="edit_project_modal__view_radio_option"]/span[@class="edit_project_modal__view_radio_button"]/button[@class="task_checkbox priority_4 checked"]';
 
     constructor(){
         super();
